@@ -1,0 +1,5 @@
+TO KNOW**************
+
+to read from a file: use the bs_tree_main(filereader).c file
+
+otherwise use the bs_tree_main.c to compile (works with non-standard input)
