@@ -1,0 +1,21 @@
+Script started on 2019-10-23 01:09:10-04:00
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn3[agill292@compute asn3]$ pwd
+/home/agill292/Tmp/CS2211a/Asn/asn3
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn3[agill292@compute asn3]$ date
+Wed Oct 23 01:09:19 EDT 2019
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn3[agill292@compute asn3]$ who am i
+agill292 pts/26       2019-10-23 01:09
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn3[agill292@compute asn3]$ ./evaluate
+Enter arithmetic expression:2*6-10
+the result is: 2.00
+do you want to continue? (Y/N): Y
+Enter arithmetic expression:8+4*2/2
+the result is: 8.25
+do you want to continue? (Y/N): Y
+Enter arithmetic expression:10-4/2
+the result is: 9.50
+do you want to continue? (Y/N): N
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn3[agill292@compute asn3]$ exit
+exit
+
+Script done on 2019-10-23 01:11:25-04:00

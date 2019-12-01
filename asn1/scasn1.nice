@@ -1,0 +1,42 @@
+Script started on 2019-09-21 21:45:25-04:00
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ pwd
+/home/agill292/Tmp/CS2211a/Asn/asn1
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ date
+Sat Sep 21 21:45:31 EDT 2019
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ who am i
+agill292 pts/9        2019-09-21 21:45
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ ls -l
+total 123
+-rw-rw-r-- 1 agill292 agill292 97795 Sep 21 21:41 Assn1.pdf
+-rw-rw-r-- 1 agill292 agill292   911 Sep 21 21:41 Assnsubmissionform.txt
+-rw-rw-r-- 1 agill292 agill292     0 Sep 19 11:42 df0
+-rw-rw-r-- 1 agill292 agill292     0 Sep 19 11:43 df1
+drwxrwxr-x 2 agill292 agill292     2 Sep 19 11:42 dir0
+drwxrwxr-x 2 agill292 agill292     2 Sep 19 11:42 dir1
+-rw-rw-r-- 1 agill292 agill292     0 Sep 21 21:45 scasn1
+-rw-rw-r-- 1 agill292 agill292   947 Sep 21 21:30 scasn1.2
+-rw-rw-r-- 1 agill292 agill292   859 Sep 21 21:32 scasn1.2.nice
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ ls -ld di*
+drwxrwxr-x 2 agill292 agill292 2 Sep 19 11:42 dir0
+drwxrwxr-x 2 agill292 agill292 2 Sep 19 11:42 dir1
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ ls *
+Assn1.pdf  Assnsubmissionform.txt  df0  df1  scasn1  scasn1.2  scasn1.2.nice
+
+dir0:
+
+dir1:
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ ls * *
+Assn1.pdf  Assnsubmissionform.txt  df0  df1  scasn1  scasn1.2  scasn1.2.nice
+Assn1.pdf  Assnsubmissionform.txt  df0  df1  scasn1  scasn1.2  scasn1.2.nice
+
+dir0:
+
+dir0:
+
+dir1:
+
+dir1:
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn1[agill292@compute asn1]$ exit
+exit
+
+Script done on 2019-09-21 21:46:50-04:00

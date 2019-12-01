@@ -18,8 +18,8 @@ Data *list_search(List list, Key key) {
 		else {
 			return &list->data;
 		}
-		return NULL;
 	}
+	return NULL;
 }
 
 // Add key with data into the front of list. If key is in list, then do nothing
@@ -35,11 +35,11 @@ void list_add(List list, Key key, Data data) {
 		oldh->key = list->key;
 		oldh->next = list->next;
 		//
-		list->next = oldh; //might be off
+		list->next = oldh; 
 		list->key = key;
 		list->data = data;
 	}
-	return;
+
 }
 
 // Delete the node in list with its key equals to key. If no such node in list, do nothing.
@@ -49,8 +49,7 @@ void list_delete(List list, Key key) {
 	//if its root...
 	if(list->key == key ) {
 		List_node *newhead = (List_node *) simu_malloc(sizeof(List_node));
-		printf("FIRST\n");
-		newhead->key = list-key;
+		newhead->key = list->key;
 		newhead->data = list->data;
 		*list = *list->next;
 		list_free(newhead);
@@ -58,7 +57,7 @@ void list_delete(List list, Key key) {
 	//to store list current node & previous node
 	List current = list;
 	List previous = list;
-	//middle algorithm
+	//middle & end algorithm 
 	while (current->next != NULL) {
 		if (key_comp(current->key, key) == 0) {
 			previous->next = current->next;	
@@ -70,7 +69,7 @@ void list_delete(List list, Key key) {
 
 // Linearly traversal the list and print each node’s key and data
 void list_print(List list) {
-   	if(list != NULL) {
+   	if(list->next != NULL) {
    	    print_list_node(list);
        	list_print(list->next);
    	}
