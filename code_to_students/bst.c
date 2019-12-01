@@ -157,20 +157,51 @@ void bstree_free(BStree bst) {
 	free( bst );
 }
 
-// add comments
+// If key is in bst, return the address of key’s associated data. If key is not in bst, return NULL
 static Data *bst_search(BStree bst, int index, Key key) {
+	//if the bst data is exactly avaliable in the amount
+	// that is needed, then return data
+	if (index == 0) {
+        return NULL;
+    } else {
+        if (bst_search(bst, bst->tree_nodes[index].left, key) != NULL) {
+            return bst_search(bst, bst->tree_nodes[index].left, key);
+       	}
+       	if (bst->tree_nodes[index].key == key) {
+            return &bst->tree_nodes[index].data;
+    	}
+        if (bst_search(bst, bst->tree_nodes[index].right, key) != NULL) {
+            return bst_search(bst, bst->tree_nodes[index].right, key);
+        }
+	}
+    //return NULL;
 }
 
-// add comments
+// call helper bstree search function
 Data *bstree_search(BStree bst, Key key) {
 	return bst_search(bst, bst->root, key);
 }
 
-// add comments
+// Return the address of the key of the first node, in order of the keys in bst, such that the
+//data of the node is greater than or equals to data If there is no such node, return NULL.
 static Key *bst_data_search(BStree bst, int index, Data data) {
+	if (index == 0) {
+		return NULL;
+	} else {
+		if (bst_data_search(bst , bst->tree_nodes[index].left, data) != NULL) {
+			return bst_data_search(bst, bst->tree_nodes[index].left, data);
+		}
+		//if the bst data is exactly avaliable in the amount that is needed, then return data
+		if (bst->tree_nodes[index].data >= data){
+			return &bst->tree_nodes[index].key;
+		}
+		if (bst_data_search(bst , bst->tree_nodes[index].right, data) != NULL) {
+			return bst_data_search(bst, bst->tree_nodes[index].right, data);
+		}
+	}
 }
 
-// add comments
+// call helper data search function
 Key *bstree_data_search(BStree bst, Data data) {
 	return bst_data_search(bst, bst->root, data);
 }

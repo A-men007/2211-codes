@@ -7,37 +7,26 @@
 // 				 if return value = 0, then key1 = key2,
 //				 if return value > 0, then key1 > key2,
 int key_comp(Key key1, Key key2) {
-    	int value = strcmp(key1, key2);
-	if (value < 0 || value > 0) {
-		return value;
-	}
-	else {
-		if (key1 < key2)
-			return -1;
-		if (key1 > key2)
-			return 1;
-		else
-			return 0;
-	}
+	if (key1 < key2)
+		return -1;
+	if (key1 > key2)
+		return 1;
+	else
+		return 0;
 }
 
 // Input:	’data1’ and ’data2’ are two Data
 // Output: if return value < 0, then data1 < data2,
 // 				 if return value = 0, then data1 = data2,
 //				 if return value > 0, then data1 > data2,
-int data_comp(Data data1, Data data2) {
-        int value = strcmp(data1, data2);
-    if (value < 0 || value > 0) {
-		return value;
-	}
-	else {
-		if (data1 < data2)
-			return -1;
-		if (data1 > data2)
-			return 1;
-		else
-			return 0;
-	}
+int data_comp(Data data1, Data data2) {     
+	if (data1 < data2)
+		return -1;
+	if (data1 > data2)
+		return 1;
+	else
+		return 0;
+
 }
 
 //	Input: ’key’: a Key
@@ -55,11 +44,11 @@ void data_print(Data data) {
 //	Input: ’node’: a Node
 //	Effect: node.key is printed and then the node.data is printed
 void print_node(Node node) {
-    printf("%d, %d", node.key, node.data);
+    printf("%6d, %6d", node.key, node.data);
 }
 
 //	Input: ’node’: a pointer to List_node
 //	Effect: node->key is printed and then the node->data is printed
 void print_list_node(List_node *node) {
-    printf("%d, %d", node->key, node->data);
+    printf("%6d, %6d\n", node->key, node->data);
 }
