@@ -1,0 +1,68 @@
+Script started on 2019-12-01 04:26:23-05:00
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ pwd
+/home/agill292/Tmp/CS2211a/Asn/asn5
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ date
+Sun Dec  1 04:26:31 EST 2019
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ who am i
+agill292 pts/2        2019-12-01 04:26
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ ./mymemory
+Enter a size for dynamic memory allocation and deallocation system:
+1000
+Enter a key integer: (one int per line)
+2
+1
+3
+1
+4
+3
+2
+3
+3
+Integers  Occurances
+   3          4
+   2          2
+   4          1
+   1          2
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ ./mymemory
+Enter a size for dynamic memory allocation and deallocation system:
+1000
+Enter a key integer: (one int per line)
+1
+5
+4
+2
+7
+8
+53
+Integers  Occurances
+  53          1
+   8          1
+   7          1
+   2          1
+   4          1
+   5          1
+   1          1
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ ./mymemory
+Enter a size for dynamic memory allocation and deallocation system:
+1000
+Enter a key integer: (one int per line)
+5
+5
+5
+5
+5
+4
+2
+1
+9
+9
+Integers  Occurances
+   9          2
+   1          1
+   2          1
+   4          1
+   5          5
+0;agill292@compute:~/Tmp/CS2211a/Asn/asn5[agill292@compute asn5]$ exit
+exit
+
+Script done on 2019-12-01 04:30:00-05:00

@@ -1,4 +1,4 @@
-#include "Memory.h"
+#include "memory.h"
 #include "list.h"
 #include <stdio.h>
 #include <string.h>
@@ -32,7 +32,7 @@ int main() {
 
     }
     //print list....
-    printf("Integers          Occurances\n");
+    printf("Integers  Occurances\n");
     list_print(list);
 
     //free memory for list and dynamically allocate

@@ -50,5 +50,5 @@ void print_node(Node node) {
 //	Input: ’node’: a pointer to List_node
 //	Effect: node->key is printed and then the node->data is printed
 void print_list_node(List_node *node) {
-    printf("%6d, %6d\n", node->key, node->data);
+    printf("%4d %10d\n", node->key, node->data);
 }
