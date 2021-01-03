@@ -2,6 +2,9 @@
 #include "anything.h"
 
 int main() {
-	fnTwo(t.code, p->who);
-	    
+	char s = "samthedean";
+	char check = 'the';
+
+	char value = findLast(&s, &check);
+	printf("the value came back as: %s", value);
 }
